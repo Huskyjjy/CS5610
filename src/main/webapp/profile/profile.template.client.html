@@ -2,63 +2,127 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet"/>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
     <title>Profile</title>
-    <link
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-            rel="stylesheet"
-    />
-
 </head>
 <body>
-<div class="container">
+    <div class="container-fluid">
     <h1>Profile</h1>
 
-    <div class="form-group row">
-        <label for="responsive-username"
-               class="col-sm-2 col-form-label">
-            Username</label>
-        <div class="col-sm-10">
-            <input type="text"
-                   readonly
-                   class="form-control"
-                   id="responsive-username"
-                   value="alice">
+        <i class="fab fa-accessible-icon"></i>
+        <i class="fab fa-3x fa-adobe"></i>
+        <i class="fas fa-camera"></i>
+        <i class="fas fa-ban" style="color:Tomato"></i>
+
+
+        <span class="fa-stack fa-2x">
+          <i class="fas fa-camera fa-stack-1x"></i>
+          <i class="fas fa-ban fa-stack-2x" style="color:Tomato"></i>
+        </span>
+
+
+        <div>
+        <div class="form-group row">
+            <label for="username"
+                   class="col-sm-2 col-form-label">Username
+            </label>
+            <div class="col-sm-10">
+                <input type="text"
+                       readonly
+                       class="form-control"
+                       id="username" value="alice">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="password"
+                   class="col-sm-2 col-form-label">
+                Password
+            </label>
+            <div class="col-sm-10">
+                <input type="password"
+                       class="form-control"
+                       id="password">
+            </div>
         </div>
     </div>
-
-
-
     <div>
-        Username
-        <input class="form-control" type="text"/>
+        <label>
+            <input type="checkbox"/> Tenured?
+        </label>
     </div>
     <div>
-        Password
-        <input class="form-control" type="password"/>
+        <label for="first">First</label>
+        <input type="text"
+               id="first"
+               title="Please type your first name"
+               placeholder="John"/>
+    </div>
+    <div>
+    Last
+    <input type="text"
+           title="Please type your last name"
+           placeholder="Doe"/>
+    </div>
+    <div>
+    Email
+    <input type="email"
+           title="Please type your email"
+           placeholder="alice@wonderland.com"/>
+    </div>
+    <div>
+    Telephone
+    <input type="tel"
+           title="Please type your phone"
+           placeholder="(555) 123-2345"/>
     </div>
     <div>
     DOB
-    <input class="form-control" type="date"/>
+    <input type="date"
+           title="Please type your date of birth"
+           value="1997-06-30"/>
     </div>
     <div>
     Role
-    <select class="form-control">
-        <option>
-            Faculty
-        </option>
-        <option>
-            Student
-        </option>
+    <select>
+        <option value="FACULTY">Faculty - can teach courses</option>
+        <option value="STUDENT">Student</option>
+        <option value="ADMIN">Admin - are super users</option>
     </select>
     </div>
     <div>
-    <label for="email">Email</label>
-    <input id="email" title="please provide your corporate email" placeholder="alice@wonderland.com" class="form-control" type="email"/>
+    Salary
+    <input type="number"
+           min="30000"
+           max="1000000"
+           value="50000"/>
     </div>
     <div>
-    Salary
-    <input class="form-control" type="number"/>
+        Favorite colors
+        <input type="checkbox" class="" name="favorite-colors"/>Yellow
+        <input type="checkbox" name="favorite-colors"/>Blue
+        <input type="checkbox" name="favorite-colors"/>Red
     </div>
-</div>
+    <div>
+        Favorite color
+        <input type="radio" name="favorite-color"/>Yellow
+        <input type="radio" name="favorite-color"/>Blue
+        <input type="radio" name="favorite-color"/>Red
+    </div>
+    <div>
+        Married
+        <label><input type="radio" name="married"/>Yes</label>
+        <label><input type="radio" name="married"/>No</label>
+    </div>
+    <button class="btn btn-primary"
+            type="button">
+        Update
+    </button>
+    <a class="btn btn-danger"
+       href="../login/login.template.client.html">
+        Logout
+    </a>
+    </div>
+<br/>
 </body>
 </html>

@@ -1,20 +1,25 @@
 h1 {
+    background-color: black;
     color: white;
-    background-color: red;
 }
 h2 {
-    color: yellow;
-    background-color: blue;
+    background-color: red;
 }
-#wbdv-module-list {
+p {
     background-color: cyan;
 }
+
+h2#wbdv-module-list { color: blue; }
+#wbdv-lessons { color: yellow; }
+
 .wbdv-module {
     background-color: lightgray;
 }
-.wbdv-bold {
-    font-weight: bolder;
-}
-.wbdv-module.wbdv-selected {
+
+.wbdv-module.wbdv-active {
     background-color: darkgray;
+}
+
+ul .wbdv-module {
+    font-weight: bold
 }
