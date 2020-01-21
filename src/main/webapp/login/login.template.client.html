@@ -15,12 +15,12 @@
     
 <div class="container">
     <h1>Sign In</h1>
-    <form>
+    <form action="../profile/profile.template.client.html">
       <div class="form-group row">
         <label for="username" class="col-sm-2 col-form-label">
           Username </label>
         <div class="col-sm-10">
-          <input class="form-control wbdv-field wbdv-user"
+          <input class="form-control wbdv-field wbdv-username"
                         id="username"
                         placeholder="Alice">
         </div>
@@ -36,7 +36,7 @@
       <div class="form-group row">
         <label class="col-sm-2 col-form-label"></label>
         <div class="col-sm-10">
-          <button class="btn btn-primary btn-block wbdv-button wbdv-login" onclick="window.location.href = '../profile/profile.template.client.html'">
+          <button type="submit" class="btn btn-primary btn-block wbdv-button wbdv-login">
               Sign In
           </button>
           <div class="row">
