@@ -1,1 +1,75 @@
-<h1>Hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="login.style.client.css"
+          rel="stylesheet"/> 
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          rel="stylesheet"/>
+    <link href="../css/styles.css"
+          rel="stylesheet"/>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand col-4" href="#">Course Manager</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse col-8" id="navbarSupportedContent">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="New Course Title" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                      <a href="course-editor/course-editor.template.client.html"><i class="fa fa-fw fa-plus"></i></a>
+                  </button>
+                </div>
+              </div>
+        </div>
+    </nav>
+  </div>
+    <table class="table table-hover">
+        <thead>
+          <tr class="table-dark">
+            <th scope="col" width="30%">Title</th>
+            <th scope="col" width="30%">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Owned by
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Me</a>
+                    </div>
+                </div>
+            </th>
+            <th scope="col" width="20%">Last modifed by me</th>
+            <th scope="col" width="10%">
+                <button class="btn"><i class="fa fa-bars"></i></button>
+            </th>
+            <th scope="col" width="10%">
+                <button><i class="fa fa-fw fa-sort"></i></button>
+            </th>
+            <th>&nbsp;</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+                <i class="fa fa-fw fa-file"></i>
+                <a href="course-editor/course-editor.template.client.html">CS5500 Software Engineer Graduate</a>
+            </td>
+            <td>me</td>
+            <td><time datetime="6:45 PM">6:45 PM</time></td>
+            <td></td>
+            <td></td>
+            <td><button><i class="fa fa-remove"></i></button></td>
+          </tr>
+          
+        </tbody>
+    </table>
+</body>
+</html>

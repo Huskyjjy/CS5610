@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Course Editor</title>
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
               rel="stylesheet"/>
         <link href="../css/styles.css"
@@ -16,20 +16,31 @@
     <div class="container-fluid">
         <h1>
             Course Editor
+            <button><i class="fa fa-remove"></i></button>
         </h1>
-
         <div class="row">
             <div class="col-4">
                 <div>
                     <h2 id="wbdv-module-list">Module list</h2>
                     <ul class="list-group">
-                        <li class="list-group-item">Module 1</li>
-                        <li class="list-group-item active">Module 2</li>
-                        <li class="list-group-item">Module 3</li>
+                        <li class="list-group-item">
+                            Module 1
+                            <button><i class="fa fa-remove"></i></button>
+                        </li>
+                        <li class="list-group-item active">
+                            Module 2
+                            <button><i class="fa fa-remove"></i></button>
+                        </li>
+                        <li class="list-group-item">
+                            Module 3
+                            <button><i class="fa fa-remove"></i></button>
+                        </li>
+                        <li class="list-group-item" style="text-align: right;">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                                <i class="fa fa-fw fa-plus"></i>
+                            </button>
+                        </li>
                     </ul>
-                    <p>
-                        This is a paragraph
-                    </p>
                 </div>
             </div>
             <div class="col-8">
@@ -52,6 +63,11 @@
                                 Lesson 3
                             </a>
                         </li>
+                        <li>
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                                <i class="fa fa-fw fa-plus"></i>
+                            </button>
+                        </li>
                     </ul>
 
                     <br/>
@@ -65,6 +81,11 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Topic 3</a>
+                        </li>
+                        <li>
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                                <i class="fa fa-fw fa-plus"></i>
+                            </button>
                         </li>
                     </ul>
                 </div>
