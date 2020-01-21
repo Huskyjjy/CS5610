@@ -9,20 +9,10 @@
 <body>
     <div class="container-fluid">
     <h1>Profile</h1>
-
-        <i class="fab fa-accessible-icon"></i>
-        <i class="fab fa-3x fa-adobe"></i>
-        <i class="fas fa-camera"></i>
-        <i class="fas fa-ban" style="color:Tomato"></i>
-
-
-        <span class="fa-stack fa-2x">
-          <i class="fas fa-camera fa-stack-1x"></i>
-          <i class="fas fa-ban fa-stack-2x" style="color:Tomato"></i>
-        </span>
-
-
-        <div>
+    <div class="alert alert-success wbdv-message" id="alertFId" style="display: none;">
+        Profile Successfully saved.
+    </div>
+    <form>
         <div class="form-group row">
             <label for="username"
                    class="col-sm-2 col-form-label">Username
@@ -30,99 +20,80 @@
             <div class="col-sm-10">
                 <input type="text"
                        readonly
-                       class="form-control"
-                       id="username" value="alice">
+                       class="form-control wbdv-field wbdv-username"
+                       id="usernameFId" value="alice">
             </div>
         </div>
         <div class="form-group row">
-            <label for="password"
+            <label for="phoneFId"
                    class="col-sm-2 col-form-label">
-                Password
+                Phone
             </label>
             <div class="col-sm-10">
-                <input type="password"
-                       class="form-control"
-                       id="password">
+                <input type="tel"
+                       class="form-control wbdv-field wbdv-phone" id="phoneFId" placeholder="555-123-4324"
+                       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
             </div>
         </div>
-    </div>
-    <div>
-        <label>
-            <input type="checkbox"/> Tenured?
-        </label>
-    </div>
-    <div>
-        <label for="first">First</label>
-        <input type="text"
-               id="first"
-               title="Please type your first name"
-               placeholder="John"/>
-    </div>
-    <div>
-    Last
-    <input type="text"
-           title="Please type your last name"
-           placeholder="Doe"/>
-    </div>
-    <div>
-    Email
-    <input type="email"
-           title="Please type your email"
-           placeholder="alice@wonderland.com"/>
-    </div>
-    <div>
-    Telephone
-    <input type="tel"
-           title="Please type your phone"
-           placeholder="(555) 123-2345"/>
-    </div>
-    <div>
-    DOB
-    <input type="date"
-           title="Please type your date of birth"
-           value="1997-06-30"/>
-    </div>
-    <div>
-    Role
-    <select>
-        <option value="FACULTY">Faculty - can teach courses</option>
-        <option value="STUDENT">Student</option>
-        <option value="ADMIN">Admin - are super users</option>
-    </select>
-    </div>
-    <div>
-    Salary
-    <input type="number"
-           min="30000"
-           max="1000000"
-           value="50000"/>
-    </div>
-    <div>
-        Favorite colors
-        <input type="checkbox" class="" name="favorite-colors"/>Yellow
-        <input type="checkbox" name="favorite-colors"/>Blue
-        <input type="checkbox" name="favorite-colors"/>Red
-    </div>
-    <div>
-        Favorite color
-        <input type="radio" name="favorite-color"/>Yellow
-        <input type="radio" name="favorite-color"/>Blue
-        <input type="radio" name="favorite-color"/>Red
-    </div>
-    <div>
-        Married
-        <label><input type="radio" name="married"/>Yes</label>
-        <label><input type="radio" name="married"/>No</label>
-    </div>
-    <button class="btn btn-primary"
-            type="button">
-        Update
-    </button>
-    <a class="btn btn-danger"
-       href="../login/login.template.client.html">
-        Logout
-    </a>
-    </div>
+        <div class="form-group row">
+            <label for="emailFId"
+                   class="col-sm-2 col-form-label">
+                Email
+            </label>
+            <div class="col-sm-10">
+                <input type="email"
+                       class="form-control wbdv-field wbdv-email" id="emailFId" placeholder="alice@northeastern.edu">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="dobFId"
+                   class="col-sm-2 col-form-label">
+                Date of Birth
+            </label>
+            <div class="col-sm-10">
+                <input type="date"
+                       class="form-control wbdv-field wbdv-dob" id="dobFId" value="2011-11-22"/>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="roleFId"
+                   class="col-sm-2 col-form-label">
+                Role
+            </label>
+            <div class="col-sm-10">
+                <select class="form-control wbdv-field wbdv-role" id="roleFId">
+                    <option value="FACULTY">Faculty</option>
+                    <option value="STUDENT">Student</option>
+                    <option value="ADMIN">Admin</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+              <button id="updateBtn" onclick="alertFunction()" class="btn btn-primary btn-block wbdv-button wbdv-update">
+              Update
+              </button>
+              <script>
+                function alertFunction() {
+                  var x = document.getElementById("alertFId");
+                  if (x.style.display === "none") {
+                    x.style.display = "block";
+                  }
+                }
+                </script>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+              <button type="submit" id="logoutBtn" formaction="../index.html" class="btn btn-primary btn-block wbdv-button wbdv-logout">
+              Logout
+              </button>
+            </div>
+        </div>
+        
+    </form>
 <br/>
 </body>
 </html>
