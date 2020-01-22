@@ -1,0 +1,68 @@
+h1 {
+    background-color: black;
+    color: white;
+}
+.wbdv-field {
+    background-color: black;
+}
+.wbdv-label{
+    background-color: grey;
+}
+.wbdv-button{
+    background-color: black;
+}
+.wbdv-row{
+    background-color: grey;
+}
+.wbdv-header{
+    background-color: grey;
+}
+.wbdv-hamburger {
+    color: chocolate;
+}
+.wbdv-course-manager{
+    color: white;
+}
+.wbdv-new-course {
+    color: coral;
+}
+.wbdv-add-course{
+    color:coral;
+}
+.wbdv-title{
+    color:white;
+}
+.wbdv-last-modified{
+    color:coral;
+}
+.wbdv-course{
+    color:coral;
+}
+.wbdv-icon{
+    color:coral;
+}
+.wbdv-owner{
+    color:lightblue;
+}
+.wbdv-grid-layout{
+    color: lightblue;
+}
+.wbdv-list-layout{
+    color: lightblue;
+}
+.wbdv-modified-date{
+    color: lightblue;
+}
+.wbdv-sort{
+    color: cornsilk;
+}
+.wbdv-delete{
+    color:cornsilk;
+}
+.wbdv-desk-content{
+}
+@media screen and (max-width: 700px) {
+    .wbdv-desk-content{
+        display: none;
+    }
+}

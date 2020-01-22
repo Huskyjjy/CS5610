@@ -9,17 +9,46 @@ p {
     background-color: cyan;
 }
 
-h2#wbdv-module-list { color: blue; }
-#wbdv-lessons { color: yellow; }
-
-.wbdv-module {
-    background-color: lightgray;
+.wbdv-module-list { 
+    background-color: red;
+    color: blue; }
+.wbdv-course-editor{
+    color: white;
 }
-
-.wbdv-module.wbdv-active {
-    background-color: darkgray;
+.wbdv-close{
+    color: grey;
 }
-
-ul .wbdv-module {
-    font-weight: bold
+.wbdv-title{
+    color: white;
+}
+.wbdv-page-tab{
+    background-color: grey;
+    color: blue;
+}
+.wbdv-new-page-btn{
+    color: black;
+}
+.wbdv-module-item{
+    background-color: red;
+    color: blue;
+}
+.wbdv-module-item-title{
+    color: black;
+}
+.wbdv-module-delete-btn{
+    color: black;
+}
+.wbdv-module-add-btn{
+    color: black;
+}
+.wbdv-topic-pill-list{
+    background-color:yellow;
+    color:red;
+}
+.wbdv-topic-pill{
+    background-color: yellow;
+    color: red;
+}
+.wbdv-topic-add-btn{
+    color: black;
 }

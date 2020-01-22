@@ -1,0 +1,37 @@
+h1 {
+    background-color: black;
+    color: white;
+}
+.wbdv-field {
+    background-color: black;
+}
+.wbdv-username {
+    color: chocolate;
+}
+.wbdv-password {
+    color: coral;
+}
+.wbdv-phone{
+    color:coral;
+}
+.wbdv-email{
+    color:coral;
+}
+.wbdv-dob{
+    color:lightblue;
+}
+.wbdv-role{
+    color: lightblue;
+}
+.wbdv-button{
+    background-color: cornflowerblue;
+}
+.wbdv-update{
+    color: cornsilk;
+}
+.wbdv-logout{
+    color:cornsilk;
+}
+.wbdv-message{
+    color:green;
+}

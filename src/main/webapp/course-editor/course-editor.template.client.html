@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Course Editor</title>
+        <title>Course Manager</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
               rel="stylesheet"/>
@@ -15,28 +15,28 @@
     <body>
     <div class="container-fluid">
         <h1>
-            Course Editor
-            <button><i class="fa fa-remove"></i></button>
+            <span class="wbdv-course-title">Course Editor</span>
+            <button class="wbdv-course-editor wbdv-close"><i class="fa fa-remove"></i></button>
         </h1>
         <div class="row">
             <div class="col-4">
                 <div>
-                    <h2 id="wbdv-module-list">Module list</h2>
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            Module 1
-                            <button><i class="fa fa-remove"></i></button>
+                    <h2>Module list</h2>
+                    <ul class="list-group wbdv-module-list">
+                        <li class="list-group-item wbdv-module-item">
+                            <span class="wbdv-module-item-title">Module 1</span>
+                            <button class="wbdv-module-item-delete-btn"><i class="fa fa-remove"></i></button>
                         </li>
-                        <li class="list-group-item active">
-                            Module 2
-                            <button><i class="fa fa-remove"></i></button>
+                        <li class="list-group-item active wbdv-module-item">
+                            <span class="wbdv-module-item-title">Module 2</span>
+                            <button class="wbdv-module-item-delete-btn"><i class="fa fa-remove"></i></button>
                         </li>
-                        <li class="list-group-item">
-                            Module 3
-                            <button><i class="fa fa-remove"></i></button>
+                        <li class="list-group-item wbdv-module-item">
+                            <span class="wbdv-module-item-title">Module 3</span>
+                            <button class="wbdv-module-item-delete-btn"><i class="fa fa-remove"></i></button>
                         </li>
                         <li class="list-group-item" style="text-align: right;">
-                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                            <button class="btn btn-outline-secondary wbdv-module-item-add-btn" type="button" id="button-addon2">
                                 <i class="fa fa-fw fa-plus"></i>
                             </button>
                         </li>
@@ -45,9 +45,9 @@
             </div>
             <div class="col-8">
                 <div>
-                    <h2 id="wbdv-lessons">Lessons</h2>
+                    <h2>Lessons</h2>
 
-                    <ul class="nav nav-tabs">
+                    <ul class="nav nav-tabs wbdv-page-tab">
                         <li class="nav-item">
                             <a class="nav-link active" href="#">
                                 Lesson 1
@@ -64,7 +64,7 @@
                             </a>
                         </li>
                         <li>
-                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                            <button class="btn btn-outline-secondary wbdv-new-page-btn" type="button" id="button-addon2">
                                 <i class="fa fa-fw fa-plus"></i>
                             </button>
                         </li>
@@ -72,18 +72,18 @@
 
                     <br/>
 
-                    <ul class="nav nav-pills">
-                        <li class="nav-item">
+                    <ul class="nav nav-pills wbdv-topic-pill-list">
+                        <li class="nav-item wbdv-topic-pill">
                             <a class="nav-link" href="#">Topic 1</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item wbdv-topic-pill">
                             <a class="nav-link active" href="#">Topic 2</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item wbdv-topic-pill">
                             <a class="nav-link" href="#">Topic 3</a>
                         </li>
                         <li>
-                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                            <button class="btn btn-outline-secondary wbdv-topic-add-btn" type="button" id="button-addon2">
                                 <i class="fa fa-fw fa-plus"></i>
                             </button>
                         </li>

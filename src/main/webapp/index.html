@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Course Manager</title>
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="login.style.client.css"
@@ -12,19 +12,20 @@
     <link href="../css/styles.css"
           rel="stylesheet"/>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../homepage.style.client.css">
 </head>
 <body>
   <div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand col-4" href="#">Course Manager</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <label class="navbar-brand col-4 wbdv-desk-content wbdv-label wbdv-course-manager">Course Manager</label>
+        <button class="navbar-toggler wbdv-field wbdv-hamburger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
         </button>
         <div class="collapse navbar-collapse col-8" id="navbarSupportedContent">
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="New Course Title" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <input type="text" class="form-control wbdv-field wbdv-new-course" placeholder="New Course Title" aria-label="Recipient's username" aria-describedby="button-addon2">
                 <div class="input-group-append">
-                  <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                  <button class="btn btn-outline-secondary wbdv-button wbdv-add-new-course" type="button" id="button-addon2">
                       <a href="course-editor/course-editor.template.client.html"><i class="fa fa-fw fa-plus"></i></a>
                   </button>
                 </div>
@@ -33,12 +34,12 @@
     </nav>
   </div>
     <table class="table table-hover">
-        <thead>
+        <thead class="wbdv-desk-content">
           <tr class="table-dark">
-            <th scope="col" width="30%">Title</th>
+            <th scope="col" width="30%" class="wbdv-header wbdv-title">Title</th>
             <th scope="col" width="30%">
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn btn-secondary dropdown-toggle wbdv-header wbdv-owner" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Owned by
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -46,27 +47,31 @@
                     </div>
                 </div>
             </th>
-            <th scope="col" width="20%">Last modifed by me</th>
-            <th scope="col" width="10%">
+            <th scope="col" width="20%" class="wbdv-header wbdv-last-modified">Last modifed by me</th>
+            <th scope="col" width="10%" class="wbdv-button wbdv-grid-layout wbdv-list-layout">
                 <button class="btn"><i class="fa fa-bars"></i></button>
             </th>
-            <th scope="col" width="10%">
+            <th scope="col" width="10%" class="wbdv-header wbdv-sort">
                 <button><i class="fa fa-fw fa-sort"></i></button>
             </th>
             <th>&nbsp;</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr class="wbdv-row wbdv-course">
             <td>
-                <i class="fa fa-fw fa-file"></i>
-                <a href="course-editor/course-editor.template.client.html">CS5500 Software Engineer Graduate</a>
+                <span class="wbdv-row wbdv-icon"><i class="fa fa-fw fa-file"></i></span>
+                <span class="wbdv-row wbdv-title"><a href="course-editor/course-editor.template.client.html">CS5500 Software Engineer Graduate</a></span>
             </td>
-            <td>me</td>
-            <td><time datetime="6:45 PM">6:45 PM</time></td>
+            <td>
+              <span class="wbdv-row wbdv-owner wbdv-desk-content">me</span>
+            </td>
+            <td>
+              <span class="wbdv-row wbdv-modified-date wbdv-desk-content"><time datetime="6:45 PM">6:45 PM</time></span>
+            </td>
             <td></td>
             <td></td>
-            <td><button><i class="fa fa-remove"></i></button></td>
+            <td><button class="wbdv-row wbdv-button wbdv-delete"><i class="fa fa-remove"></i></button></td>
           </tr>
           
         </tbody>
