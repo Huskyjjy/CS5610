@@ -1,49 +1,52 @@
 (function () {
-    var userService = new UserService();
-    var rowTemplate;
-    var tbody;
-    var createUserBtn;
+    var $usernameFld, $passwordFld;
+    var $removeBtn, $editBtn, $createBtn;
+    var $firstNameFld, $lastNameFld, $roleFld;
+    var $userRowTemplate, $tbody;
+    var userService = new AdminUserServiceClient();
+    $(main);
 
-    jQuery(main);
-    
     function main() {
-        rowTemplate = jQuery('.wbdv-template');
-        createUserBtn = jQuery('.wbdv-create');
-        tbody = jQuery('tbody');
-
-        createUserBtn.click(createUser);
-        
+        $usernameFld = $("#usernameFld");
+        $passwordFld = $("#passwordFld");
+        $firstNameFld = $("#firstNameFld");
+        $lastNameFld = $("#lastNameFld");
+        $roleFld = $("#roleFld");
+        $userRowTemplate = jQuery('.wbdv-template');
+        $tbody = jQuery('tbody');
+        $createBtn = jQuery('.wbdv-create');
+        $removeBtn = $('.wbdv-remove');
+        $editBtn = $('.wbdv-edit');
+        $createBtn.click(createUser);
+        $removeBtn.click(deleteUser);
+        $editBtn.click(updateUser);
         userService
             .findAllUsers()
-            .then(renderUsers)
+            .then(renderUsers);
+        
     }
-    
-    function createUser() {
-        var usernameFld = $('#usernameFld');
-        var passwordFld = '';
+    function createUser() { 
 
-        var username = usernameFld.val();
-        var password = 'boggus';
+     }
+    function findAllUsers() { 
 
-        var user = {
-            username: username,
-            password: password,
-            firstName: ''
-        }
+     }
+    function findUserById() { 
 
-        userService
-            .createUser(user)
-            .then(renderUsers)
-    }
+     }
+    function deleteUser() { 
 
-    function renderUsers(users) {
-        tbody.empty()
-        for(var u in users) {
-            const user = users[u]
-            const rowClone = rowTemplate.clone();
-            rowClone.removeClass('wbdv-hidden');
-            rowClone.find('.wbdv-username').html(user.username);
-            tbody.append(rowClone);
-        }
-    }
-})()
+     }
+    function selectUser() { 
+
+     }
+    function updateUser() { 
+
+     }
+    function renderUser(user) { 
+
+     }
+    function renderUsers(users) { 
+        $tbody
+     }
+})();
